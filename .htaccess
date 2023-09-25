@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+ErrorDocument 404 http://localhost/Clases/21_09/objects/error/
+
+RewriteRule ^(.*)/(.*)$ index.php?controller=$1&action=$2
+</IfModule>
