@@ -6,7 +6,6 @@
 }
 
 body {
-    height: 100vh;
     background-color: #000;
     background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80');
     background-size: cover;
@@ -119,23 +118,6 @@ header nav .toggle_btn {
     justify-content: center;
 }
 
-/* --- HERO --- */
-
-section#hero {
-    height: calc(100vh - 60px - 280px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-}
-
-#hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
 footer {
     width: 100%;
     background-color: #00000060;
@@ -200,4 +182,226 @@ footer .group-2 {
 
 footer .group-2 small {
     font-size: 17px;
+}
+
+/* MAIN */
+
+main {
+    min-height: calc(100vh - 60px - 286px);
+}
+
+/* --- HERO --- */
+
+section#hero {
+    min-height: calc(100vh - 60px - 286px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* PROJECTS */
+
+.divider {
+    height: 4px;
+    width: 270px;
+    background-color: aqua;
+    margin-top: 2px;
+    margin-bottom: 3em;
+}
+
+.portfolio {
+    width: 100%;
+    height: auto;
+    color: #fff;
+}
+
+.portfolio-headings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.5em;
+}
+
+.portfolio-headings h2 {
+    font-size: 2em;
+}
+
+.card__tittle p {
+    margin-top: 15px;
+}
+
+.portfolio .container-projects {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    /* grid-template-columns: repeat(
+        auto-fit,
+        minmax(300px, 1fr)
+    ); */
+    justify-content: center;
+    /* gap: 10px; */
+}
+
+.card-project {
+    width: 300px;
+    height: 410px;
+    background-color: #2b3058a5;
+    border-radius: 20px;
+    margin: 0 20px;
+    transition: scale 0.2 ease;
+}
+
+.card-project:hover {
+    scale: 1.05;
+}
+
+
+.car__image {
+    width: 100%;
+    height: 150px;
+    /* background-image: url('../imgs/2-original.png'); */
+    background-size: cover;
+}
+
+.imagen_card {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card__tittle {
+    padding: 20px;
+}
+
+.card__project-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card__project-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card__project-links i {
+    font-size: 1.5em;
+}
+
+.card-project .project-details {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+    margin: 1em;
+}
+
+.project-details:hover {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.card-project .project-details a {
+    text-decoration: none;
+    color: #191c32;
+    text-transform: uppercase;
+}
+
+.project-details-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+/* --- ABOUT --- */
+
+.about {
+    display: flex;
+    width: 60%;
+}
+
+.about-image {
+    width: 380px;
+    height: 400px;
+    border-radius: 50px;
+}
+
+.about-info {
+    margin-left: 20px;
+    display: grid;
+    align-items: center;
+}
+
+
+/* --- CONTACT --- */
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    display: flex;
+    width: 70%;
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #2222227c;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block {
+    grid-column: 1/3;
+}
+
+.contact-form form {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form p {
+    margin-top: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 90%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+
+.contact-form form button {
+    background: #d70e21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.contact-info {
+    background-color: #00000086;
 }

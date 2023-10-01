@@ -1,4 +1,5 @@
 @media (max-width: 992px) {
+    
     header nav .links, header nav .action_btn {
         display: none;
     }
